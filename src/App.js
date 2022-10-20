@@ -2,8 +2,11 @@ import './App.css';
 // import Button from '@mui/material/Button';
 import {useState, useEffect} from "react"
 import Container from '@mui/material/Container';
-// import Header from "./Header"
+import Header from "./Header"
 import Card from "./Card"
+import {Routes, Route} from "react-router-dom"
+import Women from "./Women"
+
 
 function App() {
 
@@ -19,8 +22,11 @@ function App() {
     <div className="App">
       {/* <Button variant="contained">Hello World</Button> */}
       <Container>
-        {/* <Header/> */}
-        <Card data={data}/>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Card data={data}/>}></Route>
+          <Route path="/women" element={<Women data={data}/>}></Route>
+        </Routes>
       </Container>
     </div>
   );

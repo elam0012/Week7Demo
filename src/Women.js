@@ -5,10 +5,10 @@ import Typography from '@mui/material/Typography';
 import Rating from '@mui/material/Rating';
 
 
-export default function Card({data}) {
+export default function Women({data}) {
   if(data.length === 0) return null
   else { 
-    let result = data.filter(obj => obj.category === "men's clothing")
+    let result = data.filter(obj => obj.category === "women's clothing")
     return (
     <Grid container spacing={2} >
       {result.map((item) => (
