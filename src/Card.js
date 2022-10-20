@@ -2,7 +2,7 @@ import React from "react"
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import Rating from '@mui/material/Rating';
+// import Rating from '@mui/material/Rating';
 
 
 export default function Card({data}) {

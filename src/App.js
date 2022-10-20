@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 // import Button from '@mui/material/Button';
 import {useState, useEffect} from "react"
 import Container from '@mui/material/Container';
-import Header from "./Header"
+// import Header from "./Header"
 import Card from "./Card"
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
     <div className="App">
       {/* <Button variant="contained">Hello World</Button> */}
       <Container>
-        <Header/>
+        {/* <Header/> */}
         <Card data={data}/>
       </Container>
     </div>
